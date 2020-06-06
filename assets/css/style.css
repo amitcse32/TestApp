@@ -1,0 +1,258 @@
+@charset "utf-8";
+/* CSS Document */
+/* * {
+  margin: 0 auto;
+  padding: 0px;
+} */
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #636366;
+	box-sizing: border-box;
+}
+.wrap {
+  max-width: 1170px;
+  padding: 0px 15px;
+  margin: 0 auto;
+  width: 100%;
+}
+.areMain {
+  margin: 0 auto;
+  padding: 0px;
+  width: 100%;
+}
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 60px;
+  letter-spacing: -0.02em;
+  color: #000000;
+}
+h2 {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 35px;
+  letter-spacing: -0.01em;
+  color: #1C1C1E;
+}
+.areMain h1 {
+  margin: 96px auto 70px;
+  width: 100%;
+  text-align: center;
+}
+.tabsHeading {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+}
+.tabsHeading ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0 auto;
+}
+.tabsHeading ul li {
+  float: left;
+  padding: 20px;
+  margin-right: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  /* ui-black */
+  color: #000000;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.tabsHeading ul li:hover, .tabsHeading ul li.active {
+  background: #FBFBFD;
+  border: 1px solid #E5E5EA;
+}
+.tabsHeading ul li:last-child {
+  color: #1A68FA;
+}
+.tabsHeading ul li img {
+  margin: 12px auto;
+padding: 0px;
+}
+.sliderArea {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.Box {
+  
+  background: #FFFFFF;
+  border: 1px solid #F2F2F7;
+  box-sizing: border-box;
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.08);
+  float: left;
+  padding: 25px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 90px;
+  margin-right: 25px;
+}
+.tagsRight {
+  position: absolute;
+  right: 28px;
+  top: 32px;
+  width: 100px;
+}
+.hrs {
+  background: #48484A;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 4px 8px;
+  color: #FFF;
+  float: right;
+}
+.degree {
+  border: 1px solid #3A3A3C;
+  display: flex;
+  margin-bottom: 4px;
+  align-items: center;
+  letter-spacing: 0.02em;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 3px 8px;
+  float: right;
+  clear: both;
+}
+.degree img {
+  margin-right: 5px;
+}
+.circleImage {
+  background: #F2F2F7;
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-left: -60px;
+  margin-top: -60px;
+}
+.Box h2 {
+  min-height: 70px;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+.Box p {
+  margin-bottom: 20px;
+}
+.rm {
+  font-size: 16px;
+  color: #1C1C1E;
+  line-height: 24px;
+  font-weight: 500;
+}
+.arrowsSlider {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 50%;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.arrowsSlider .arrow {
+  margin-left: -45px;
+  padding: 16px;
+  width: 68px;
+  height: 68px;
+  background: #FFFFFF;
+  border: 2px solid #F2F2F7;
+  box-sizing: border-box;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  padding: 24px;
+}
+.arrowsSlider .arrow.next {
+  margin-left: auto;
+  margin-right: -22px;
+  transform: rotate(-185deg);
+}
+@media only screen and (max-width:1365px){
+	.wrap {
+	max-width: 920px;
+}
+	.tabsHeading ul li {
+	padding: 15px;
+}
+}
+@media only screen and (max-width:1023px){
+	.tabsHeading ul li {
+	font-size: 12px;
+}
+	.areMain h1 {
+	margin: 40px auto;
+	font-size: 35px;
+}
+	.tabsHeading ul li img {
+	margin-bottom: 10px;
+}
+}
+@media only screen and (max-width:767px){
+	.tabsHeading ul li {
+	font-size: 11px;
+	padding: 6px;
+	width: calc(16.66% - 5px);
+	margin-right: 5px;
+}
+		.wrap {
+	max-width: 100%;
+			box-sizing: border-box;
+}
+.tabsHeading ul li {
+	font-size: 11px;
+	padding: 6px;
+	width: calc(16.66% - 5px);
+	margin-right: 5px;
+	text-align: center;
+	box-sizing: border-box;
+	line-height: 16px;
+	word-break: break-all;
+	min-height: 85px;
+}
+}
+@media only screen and (max-width:567px){
+	.areMain h1 {
+	margin: 40px auto;
+	font-size: 30px;
+	line-height: 43px;
+}
+	.tabsHeading ul li {
+
+	width: calc(33% - 5px);
+		font-size: 10px;
+
+}
+}
+.loginButton{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.innerSection{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
